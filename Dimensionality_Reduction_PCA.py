@@ -1,7 +1,7 @@
 #Use the iris dataset for PCA. It is included with scikit-learn
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
-from sklearn.datasets imort load_iris
+from sklearn.datasets import load_iris
 
 #Load the dataset and initialize a PCA estimator.
 #PCA takes a number of principal components to retain as hyperparameters.
@@ -26,7 +26,7 @@ for i in range(len(reduced_X)):
 	else:
 		green_x.append(reduced_X[i][0])
 		green_y.append(reduced_X[i][1])
-plt.scatter(red_x, red_y, c='r', marker='X')
+plt.scatter(red_x, red_y, c='r', marker='x')
 plt.scatter(blue_x, blue_y, c='b', marker='D')
 plt.scatter(green_x, green_y, c='g', marker='.')
 plt.show()
